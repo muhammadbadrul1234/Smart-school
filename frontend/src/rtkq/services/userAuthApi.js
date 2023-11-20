@@ -16,7 +16,7 @@ function createFormData(user) {
 
 export const userAuthApi = createApi({
   reducerPath: 'userAuthApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://127.0.0.1:8000/api/user/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://badrul99.pythonanywhere.com/api/user/' }),
   endpoints: (builder) => ({
     registerUser: builder.mutation({
         query: (user)=>{
@@ -88,7 +88,7 @@ export const { useRegisterUserMutation,useLoginUserMutation, useGetLoggedUserQue
 
 export const userStudentApi = createApi({
   reducerPath: 'userStudentApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://127.0.0.1:8000/api/student/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://badrul99.pythonanywhere.com/api/student/' }),
   endpoints: (builder) => ({
   
     studentAdmission: builder.mutation({
